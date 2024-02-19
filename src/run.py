@@ -28,10 +28,10 @@ def main():
 
     table = soup.find("table", {"class": "m-tableFlex"})
     rows = table.findAll("tr")
-    headers, recent = rows[0], rows[1]
+    headers, latest = rows[0], rows[1]
     validate_headers(headers)
 
-    tds = recent.findAll("td")
+    tds = latest.findAll("td")
     td_num, td_event_date, td_agenda, _, td_docs, _ = tds
 
     num = td_num.text
