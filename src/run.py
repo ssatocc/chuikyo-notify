@@ -13,7 +13,7 @@ def notify(num, event_date, agenda_list, docs):
     access_token = os.getenv("ACCESS_TOKEN")
     headers = {"Authorization": f"Bearer {access_token}"}
     agenda = "\n".join(agenda_list)
-    message = f"\n回数:\n{num}\n\n" + \
+    message = f"\n\n回数:\n{num}\n\n" + \
         f"開催日:\n{event_date}\n\n" + \
         f"議題等:\n{agenda}\n\n" + \
         f"資料等:\n{docs}"
