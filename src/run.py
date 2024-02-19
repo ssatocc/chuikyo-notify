@@ -50,7 +50,7 @@ def main():
     td_num, td_event_date, td_agenda, _, td_docs, _ = tds
 
     num = td_num.text
-    if check_latest_num(num):
+    if not check_latest_num(num):
         event_date = td_event_date.text.split("（")[0]
         ol_agenda = td_agenda.find("ol")
         agenda_list = [li.text for li in ol_agenda.findAll("li")]
