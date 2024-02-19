@@ -22,6 +22,8 @@ jobs:
         run: pip install -r src/requirements.txt
 
       - name: Run
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           cd src/
           python run.py
