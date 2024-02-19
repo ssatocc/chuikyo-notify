@@ -2,6 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 
 
+def check_latest_num(num):
+    print(num)
+
+
 def validate_headers(headers):
     ths = headers.findAll("th")
     th_set = {th.text for th in ths}
@@ -27,7 +31,19 @@ def main():
     headers, recent = rows[0], rows[1]
     validate_headers(headers)
 
-    print(recent)
+    tds = recent.findAll("td")
+    td_num, td_event_date, td_agenda, _, td_docs, _ = tds
+
+    num = td_num.text
+    check_latest_num(num)
+
+    event_date = td_event_date.text.split("（")[0]
+    ol_agenda = td_agenda.find("ol")
+    agenda_list = [li.text for li in ol_agenda.findAll("li")]
+    docs = td_docs.find("a")["href"]
+    print(event_date)
+    print(agenda_list)
+    print(docs)
 
 
 if __name__ == "__main__":
