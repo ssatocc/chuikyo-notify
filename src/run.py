@@ -2,6 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 
 
+def update_latest_num(num):
+    print(num)
+
+
 def notify(num, event_date, agenda_list, docs):
     print(num)
     print(event_date)
@@ -51,6 +55,7 @@ def main():
         agenda_list = [li.text for li in ol_agenda.findAll("li")]
         docs = td_docs.find("a")["href"]
         notify(num, event_date, agenda_list, docs)
+        update_latest_num(num)
 
 
 if __name__ == "__main__":
