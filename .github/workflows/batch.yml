@@ -1,6 +1,9 @@
 name: batch
 
 on:
+  schedule:
+    # 10am on JST
+    - cron: '0 1 * * *'
   workflow_dispatch:
 
 jobs:
