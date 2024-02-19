@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 
 
 def update_latest_num(num):
-    print(num)
+    with open("num.txt", "w") as f:
+        f.write(num + "\r\n")
 
 
 def notify(num, event_date, agenda_list, docs):
