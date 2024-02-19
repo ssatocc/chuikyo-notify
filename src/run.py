@@ -12,7 +12,7 @@ def update_latest_num(num):
 def notify(num, event_date, agenda_list, docs):
     access_token = os.getenv("ACCESS_TOKEN")
     headers = {"Authorization": f"Bearer {access_token}"}
-    message = f"回数:\n{num}"
+    message = f"\n回数:\n{num}\n\n開催日:\n{event_date}"
     data = {"message": message}
     requests.post(
         "https://notify-api.line.me/api/notify", headers=headers, data=data
