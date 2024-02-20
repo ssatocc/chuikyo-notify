@@ -5,6 +5,8 @@ Notify when there is an update on the Chuikyo website
 
 ![chuikyo-notify](https://github.com/ssatocc/chuikyo-notify/assets/153752928/895f29b7-36da-4585-81d0-7d2d255934d1)
 
+![line](https://github.com/ssatocc/chuikyo-notify/assets/153752928/ba2bf30b-2395-44cd-94ed-0f820213670b)
+
 ## GitHub Pages
 
 Display the latest number saved by batch workflow
