@@ -3,6 +3,10 @@ Notify when there is an update on the Chuikyo website
 
 ## Overview
 
+Check for update on the Chuikyo website every day at 10am using GitHub Actions
+
+If there is an update, notify with LINE Notify
+
 ![chuikyo-notify](https://github.com/ssatocc/chuikyo-notify/assets/153752928/895f29b7-36da-4585-81d0-7d2d255934d1)
 
 ### Example
