@@ -3,7 +3,7 @@ Notify when there is an update on the Chuikyo website
 
 ## Overview
 
-wip
+![chuikyo-notify](https://github.com/ssatocc/chuikyo-notify/assets/153752928/895f29b7-36da-4585-81d0-7d2d255934d1)
 
 ## GitHub Pages
 
