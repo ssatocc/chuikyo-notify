@@ -10,9 +10,7 @@ If there is an update, notify with LINE Notify.
 
 ### Example
 
-![line](https://github.com/ssatocc/chuikyo-notify/assets/153752928/274ed308-fb86-48a0-8e05-a48e022b9eb6)
-
-<img src="https://github.com/ssatocc/chuikyo-notify/assets/153752928/274ed308-fb86-48a0-8e05-a48e022b9eb6" alt="line" style="max-width: 463px;">
+<img src="https://github.com/ssatocc/chuikyo-notify/assets/153752928/274ed308-fb86-48a0-8e05-a48e022b9eb6" width="463px">
 
 ## GitHub Pages
 
