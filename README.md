@@ -10,7 +10,7 @@ If there is an update, notify with LINE Notify.
 
 ### Example
 
-![line](https://github.com/ssatocc/chuikyo-notify/assets/153752928/ba2bf30b-2395-44cd-94ed-0f820213670b)
+![line](https://github.com/ssatocc/chuikyo-notify/assets/153752928/e2181f03-60d0-4e66-b8a3-b6a0f0ad6ecb)
 
 ## GitHub Pages
 
