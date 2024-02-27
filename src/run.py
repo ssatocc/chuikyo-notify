@@ -9,7 +9,12 @@ def update_latest_num(num):
         f.write(num + "\r\n")
 
 
-def notify(num, event_date, agenda_list, docs):
+def send_email():
+    # wip
+    pass
+
+
+def line_notify(num, event_date, agenda_list, docs):
     url = "https://notify-api.line.me/api/notify"
     access_token = os.getenv("ACCESS_TOKEN")
     assert access_token is not None
@@ -67,7 +72,8 @@ def main():
         ol_agenda = td_agenda.find("ol")
         agenda_list = [li.text for li in ol_agenda.findAll("li")]
         docs = td_docs.find("a")["href"]
-        notify(num, event_date, agenda_list, docs)
+        line_notify(num, event_date, agenda_list, docs)
+        send_email()
         update_latest_num(num)
 
 
