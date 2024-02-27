@@ -8,9 +8,13 @@ If there is an update, notify with LINE Notify.
 
 ![chuikyo-notify](https://github.com/ssatocc/chuikyo-notify/assets/153752928/895f29b7-36da-4585-81d0-7d2d255934d1)
 
-### Example
+### LINE Notify
 
 <img src="https://github.com/ssatocc/chuikyo-notify/assets/153752928/274ed308-fb86-48a0-8e05-a48e022b9eb6" width="463px">
+
+### Email
+
+wip
 
 ## GitHub Pages
 
@@ -26,3 +30,4 @@ Display the latest number saved by batch workflow.
 ## Docs
 
 - [LINE Notify](https://notify-bot.line.me/ja/)
+- wip
