@@ -10,6 +10,7 @@ def update_latest_num(num):
 
 
 def notify(num, event_date, agenda_list, docs):
+    url = "https://notify-api.line.me/api/notify"
     access_token = os.getenv("ACCESS_TOKEN")
     assert access_token is not None
     headers = {"Authorization": f"Bearer {access_token}"}
@@ -19,14 +20,14 @@ def notify(num, event_date, agenda_list, docs):
         f"議題等:\n{agenda}\n\n" + \
         f"資料等:\n{docs}"
     data = {"message": message}
-    requests.post(
-        "https://notify-api.line.me/api/notify", headers=headers, data=data
-    )
+    resp = requests.post(url, headers=headers, data=data)
+    assert resp.status_code == 200
 
 
 def check_latest_num(num):
     url = "https://ssatocc.github.io/chuikyo-notify/"
     resp = requests.get(url)
+    assert resp.status_code == 200
     saved_num = resp.text.split("\r\n")[0]
     return saved_num == num
 
@@ -46,6 +47,7 @@ def validate_title(title):
 def main():
     url = "https://www.mhlw.go.jp/stf/shingi/shingi-chuo_128154.html"
     resp = requests.get(url)
+    assert resp.status_code == 200
     soup = BeautifulSoup(resp.content, "html.parser")
 
     title = soup.find("title").text
