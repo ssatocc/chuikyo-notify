@@ -11,6 +11,7 @@ def update_latest_num(num):
 
 def notify(num, event_date, agenda_list, docs):
     access_token = os.getenv("ACCESS_TOKEN")
+    assert access_token is not None
     headers = {"Authorization": f"Bearer {access_token}"}
     agenda = "\n".join(agenda_list)
     message = f"\n\n回数:\n{num}\n\n" + \
