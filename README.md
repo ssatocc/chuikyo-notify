@@ -37,6 +37,7 @@ Display the latest number saved by batch workflow.
 
 - ACCESS_TOKEN
 - PAT
+  - Expires on Thu, Feb 20 2025
 
 ## Docs
 
