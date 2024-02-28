@@ -3,7 +3,7 @@ Notify when there is an update on the Chuikyo website
 
 ## Overview
 
-Checking for update on the Chuikyo website every day at 10am using GitHub Actions.<br>
+Checking for update on the Chuikyo website every day at 10am (JST) using GitHub Actions.<br>
 If there is an update, notify with LINE Notify.
 
 #### Feature
