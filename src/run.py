@@ -15,10 +15,12 @@ def line_notify(num, event_date, agenda_list, docs):
     assert access_token is not None
     headers = {"Authorization": f"Bearer {access_token}"}
     agenda = "\n".join(agenda_list)
-    message = f"\n\n回数:\n{num}\n\n" + \
-        f"開催日:\n{event_date}\n\n" + \
-        f"議題等:\n{agenda}\n\n" + \
-        f"資料等:\n{docs}"
+    message = (
+        f"\n\n回数:\n{num}\n\n"
+        + f"開催日:\n{event_date}\n\n"
+        + f"議題等:\n{agenda}\n\n"
+        + f"資料等:\n{docs}"
+    )
     data = {"message": message}
     resp = requests.post(url, headers=headers, data=data)
     assert resp.status_code == 200
@@ -35,7 +37,14 @@ def check_latest_num(num):
 def validate_headers(headers):
     ths = headers.findAll("th")
     th_set = {th.text for th in ths}
-    expected_th_set = {"回数", "資料等", "開催案内", "議題等", "議事録／議事要旨", "開催日"}
+    expected_th_set = {
+        "回数",
+        "資料等",
+        "開催案内",
+        "議題等",
+        "議事録／議事要旨",
+        "開催日",
+    }
     assert expected_th_set == th_set
 
 
