@@ -35,3 +35,4 @@ Display the latest number saved by batch workflow.
 ## Docs
 
 - [LINE Notify](https://notify-bot.line.me/ja/)
+- [Creating a fine-grained personal access token | GitHub Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token)
