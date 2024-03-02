@@ -6,21 +6,11 @@ Notify when there is an update on the Chuikyo website
 Checking for update on the Chuikyo website every day at 10am (JST) using GitHub Actions.<br>
 If there is an update, notify with LINE Notify.
 
-#### Feature
-
-> If there is an update, also notify with Email.
-
 ![chuikyo-notify](https://github.com/ssatocc/chuikyo-notify/assets/153752928/895f29b7-36da-4585-81d0-7d2d255934d1)
 
 ### LINE Notify
 
 <img src="https://github.com/ssatocc/chuikyo-notify/assets/153752928/274ed308-fb86-48a0-8e05-a48e022b9eb6" width="463px">
-
-<!--
-### Email
-
-wip
--->
 
 ## GitHub Pages
 
