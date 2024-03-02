@@ -45,7 +45,6 @@ def validate_title(title):
 
 
 def main():
-    assert False
     url = "https://www.mhlw.go.jp/stf/shingi/shingi-chuo_128154.html"
     resp = requests.get(url)
     assert resp.status_code == 200
