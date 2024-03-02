@@ -36,7 +36,10 @@ Display the latest number saved by batch workflow.
 ## Repository secrets
 
 - ACCESS_TOKEN
+  - Access token (LINE Notify)
+  - No expiration
 - PAT
+  - Personal access token (GitHub)
   - Expires on Thu, Feb 20 2025
 
 ## Docs
