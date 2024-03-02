@@ -9,10 +9,6 @@ def update_num_txt(num):
         f.write(num + "\r\n")
 
 
-def send_email():
-    pass
-
-
 def line_notify(num, event_date, agenda_list, docs):
     url = "https://notify-api.line.me/api/notify"
     access_token = os.getenv("ACCESS_TOKEN")
@@ -72,7 +68,6 @@ def main():
         agenda_list = [li.text for li in ol_agenda.findAll("li")]
         docs = td_docs.find("a")["href"]
         line_notify(num, event_date, agenda_list, docs)
-        send_email()
         update_num_txt(num)
 
 
