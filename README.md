@@ -3,24 +3,14 @@ Notify when there is an update on the Chuikyo website
 
 ## Overview
 
-Checking for update on the Chuikyo website every day at 10am (JST) using GitHub Actions.<br>
+Checking for update on the Chuikyo website every day at 10am, 2pm, 6pm (JST) using GitHub Actions.<br>
 If there is an update, notify with LINE Notify.
-
-#### Feature
-
-> If there is an update, also notify with Email.
 
 ![chuikyo-notify](https://github.com/ssatocc/chuikyo-notify/assets/153752928/895f29b7-36da-4585-81d0-7d2d255934d1)
 
 ### LINE Notify
 
 <img src="https://github.com/ssatocc/chuikyo-notify/assets/153752928/274ed308-fb86-48a0-8e05-a48e022b9eb6" width="463px">
-
-<!--
-### Email
-
-wip
--->
 
 ## GitHub Pages
 
@@ -36,9 +26,13 @@ Display the latest number saved by batch workflow.
 ## Repository secrets
 
 - ACCESS_TOKEN
+  - Access token (LINE Notify)
+  - No expiration
 - PAT
-  - Expires on Thu, Feb 20 2025
+  - Personal access token (GitHub)
+  - `Expires on Thu, Feb 20 2025`
 
 ## Docs
 
 - [LINE Notify](https://notify-bot.line.me/ja/)
+- [Creating a fine-grained personal access token | GitHub Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token)
