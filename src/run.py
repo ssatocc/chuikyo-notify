@@ -4,13 +4,12 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def update_latest_num(num):
+def update_num_txt(num):
     with open("num.txt", "w") as f:
         f.write(num + "\r\n")
 
 
 def send_email():
-    # wip
     pass
 
 
@@ -74,7 +73,7 @@ def main():
         docs = td_docs.find("a")["href"]
         line_notify(num, event_date, agenda_list, docs)
         send_email()
-        update_latest_num(num)
+        update_num_txt(num)
 
 
 if __name__ == "__main__":
