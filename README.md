@@ -30,7 +30,7 @@ Display the latest number saved by batch workflow.
   - No expiration
 - PAT
   - Personal access token (GitHub)
-  - `Expires on Thu, Feb 20 2025`
+  - Expires on `Thu, Feb 20 2025`
 
 ## Docs
 
