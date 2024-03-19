@@ -35,6 +35,7 @@ jobs:
           cd src/
           python run.py
           cat num.txt > ../docs/index.html
+          cp data.xlsx ../docs/xlsx/data.xlsx
 
       - name: Set git settings & Commit changes
         run: |
