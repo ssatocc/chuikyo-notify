@@ -56,11 +56,11 @@ def validate_headers(headers):
     th_set = {th.text for th in ths}
     expected_th_set = {
         "回数",
-        "資料等",
-        "開催案内",
+        "開催日",
         "議題等",
         "議事録／議事要旨",
-        "開催日",
+        "資料等",
+        "開催案内",
     }
     assert expected_th_set == th_set
 
