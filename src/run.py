@@ -1,7 +1,24 @@
 import os
 
 import requests
+import xlsxwriter
 from bs4 import BeautifulSoup
+
+
+def create_xlsx_file(headers, rows):
+    ths = headers.findAll("th")
+    header = [th.text for th in ths]
+
+    row_list = []
+    for row in rows:
+        row_list.append([td.text for td in row.findAll("td")])
+
+    wb = xlsxwriter.Workbook("data.xlsx")
+    ws = wb.add_worksheet()
+    ws.write_row(0, 0, header)
+    for i, row in enumerate(row_list):
+        ws.write_row(i + 1, 0, row)
+    wb.close()
 
 
 def update_num_txt(num):
@@ -78,6 +95,7 @@ def main():
         docs = td_docs.find("a")["href"]
         line_notify(num, event_date, agenda_list, docs)
         update_num_txt(num)
+        create_xlsx_file(headers, rows[1:])
 
 
 if __name__ == "__main__":
