@@ -12,6 +12,12 @@ If there is an update, notify with LINE Notify.
 
 <img src="https://github.com/ssatocc/chuikyo-notify/assets/153752928/274ed308-fb86-48a0-8e05-a48e022b9eb6" width="463px">
 
+<!--
+### New Feature: Excel's export function
+
+- [https://ssatocc.github.io/chuikyo-notify/xlsx/data.xlsx](https://ssatocc.github.io/chuikyo-notify/xlsx/data.xlsx)
+-->
+
 ## GitHub Pages
 
 Display the latest number saved by batch workflow.
