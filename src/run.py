@@ -11,7 +11,7 @@ def create_xlsx_file(headers, rows):
 
     row_list = []
     for row in rows:
-        row_list.append([td.text for td in row.findAll("td")])
+        row_list.append([td.text.lstrip("\n") for td in row.findAll("td")])
 
     wb = xlsxwriter.Workbook("data.xlsx")
     ws = wb.add_worksheet()
