@@ -52,8 +52,6 @@ def check_latest_num(num):
 
 
 def validate_headers(headers):
-    ths = headers.findAll("th")
-    th_set = {th.text for th in ths}
     expected_th_set = {
         "回数",
         "開催日",
@@ -62,6 +60,8 @@ def validate_headers(headers):
         "資料等",
         "開催案内",
     }
+    ths = headers.findAll("th")
+    th_set = {th.text for th in ths}
     assert expected_th_set == th_set
 
 
