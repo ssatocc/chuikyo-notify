@@ -16,7 +16,7 @@ If there is an update, notify with LINE Notify.
 
 Access the URL below to get the last several histories of Chuikyo website in Excel format.
 
-- [ssatocc.github.io/chuikyo-notify/xlsx/data.xlsx](https://ssatocc.github.io/chuikyo-notify/xlsx/data.xlsx)
+- [ssatocc.github.io/chuikyo-notify/output/data.xlsx](https://ssatocc.github.io/chuikyo-notify/output/data.xlsx)
 
 ![image](https://github.com/ssatocc/chuikyo-notify/assets/153752928/684fa9b5-3ad1-43fd-858f-8ac4cdd4ba7e)
 
